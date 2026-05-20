@@ -1,7 +1,7 @@
 ﻿import PocketBase from 'pocketbase'
 
 export const pb = new PocketBase('https://fieldtrack-kenya.fly.dev')
-export const PAYSTACK_PUBLIC_KEY = 'pk_test_523b218b82f8a13cab86ed2ae719de25ecb9e913'
+export const PAYSTACK_PUBLIC_KEY = import.meta.env.VITE_PAYSTACK_PUBLIC_KEY
 
 // ── Pay-per-action pricing ──────────────────────────────────────
 // No subscription. No monthly. Pay only when you need it.
